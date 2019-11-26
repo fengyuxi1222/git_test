@@ -15,7 +15,7 @@ import redis.clients.jedis.Jedis;
  */
 public class JedisTest {
      public static void main(String[] args) {
-    	 
+    	int a;
 		Jedis jedis =new Jedis("192.168.1.100", 6379);
 		Set<String> keys = jedis.keys("*");
 		System.out.println(keys);
